@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Button from './Button';
 import Link from 'next/link';
 import { HiOutlineArrowLeft } from 'react-icons/hi';
@@ -10,7 +10,7 @@ type BlogCardContent = {
   title: string;
   p1: string;
   p2: string;
-  img:string | "";
+  img?:StaticImageData;
 };
 
 type BlogCardId = {
@@ -24,7 +24,7 @@ const BlogCard : React.FC<BlogCardId>= ({id,btn=true,btnText=false,content}) => 
   return (
     <div className='grid grid-rows-[repeat(2,1fr)_20px] rounded-lg text-wrap bg-gray-100 p-0 m-0' >
       <div className="">
-        <Image src={content?.img} alt="picture" className='w-full' style={{ height: "300px"}} />
+        <Image src={content?.img || ""} alt="picture" className='w-full' style={{ height: "300px"}} />
       </div>
       <div className="flex flex-col gap-2 p-3">
       <p>{content?.date}</p>
