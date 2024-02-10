@@ -33,22 +33,22 @@ const Footer = () => {
           Egypt
           <br />
           </address>
-          <a href="tel:+02 01094530343" className='pt-4'>+02 01094530343</a>
+          <Link href="tel:+02 01094530343" className='pt-4'>+02 01094530343</Link>
           <br />
-          <a href="mailto:islamabozeed247@gmail.com" className='pt-4'>islamabozeed247@gmail.com</a>        
+          <Link href="mailto:islamabozeed247@gmail.com" className='pt-4'>islamabozeed247@gmail.com</Link>        
           <div className="social flex gap-10 mt-4">
-              <a href='/' className='text-2xl'>
+              <Link href='/' className='text-2xl'>
                 <BsLinkedin/>
-              </a>
-             <a href='/' className='text-2xl'>
+              </Link>
+             <Link href='/' className='text-2xl'>
                 <BsGithub/>
-              </a>
-             <a href='/' className='text-2xl'>
+              </Link>
+             <Link href='/' className='text-2xl'>
                 <BsYoutube/>
-              </a>
-             <a href='/' className='text-2xl'>
+              </Link>
+             <Link href='/' className='text-2xl'>
                 <BsInstagram/>
-              </a>
+              </Link>
           </div>
         </div>
         <div className="flex flex-col">
