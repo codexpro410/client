@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // for library react-rating-stars-component
+    "typeRoots": ["./typings", "./node_modules/@types"],
     "paths": {
       "@/*": ["./src/*"]
     }
