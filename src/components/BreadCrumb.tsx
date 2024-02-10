@@ -8,7 +8,7 @@ type BreadCrumbTitle = {
 const BreadCrumb :React.FC<BreadCrumbTitle> = ({title,href}) => {
   return (
     <div className='text-2xl font-bold py-10  text-center bg-slate-50 text-black'>
-        <a href="/">Home</a>
+        <Link href="/">Home</Link>
         <span> / </span>
         <Link href={href} className='capitalize'>{title}</Link>
     </div>
