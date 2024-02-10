@@ -7,6 +7,7 @@ import { array } from '@/pages/blogs';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import BlogFilter from '../../layouts/BlogFilter';
 import Button from '@/components/Button';
+import { StaticImageData } from 'next/image';
 
 
 type SingleBlogProps = {
@@ -16,7 +17,7 @@ type SingleBlogProps = {
     title: string;
     p1: string;
     p2: string;
-    img:string | "";
+    img:StaticImageData | "";
   };
 };
 const SingleBlog : React.FC<SingleBlogProps> = ({content}) => {

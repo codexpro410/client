@@ -6,11 +6,11 @@ import Link from 'next/link';
 import { HiOutlineArrowLeft } from 'react-icons/hi';
 
 type BlogCardContent = {
-  date: string;
-  title: string;
-  p1: string;
-  p2: string;
-  img?:StaticImageData;
+  date?: string;
+  title?: string;
+  p1?: string;
+  p2?: string;
+  img?:StaticImageData | "";
 };
 
 type BlogCardId = {
