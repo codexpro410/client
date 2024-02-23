@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout'
 import Meta from '@/utlis/Meta'
 import React from 'react'
 
-const privacyPolicy = () => {
+const ShippingPolicy = () => {
   return (
     <Layout>
         <Meta title='shipping-policy'/>
@@ -49,4 +49,4 @@ const privacyPolicy = () => {
   )
 }
 
-export default privacyPolicy
+export default ShippingPolicy

@@ -6,15 +6,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/utlis/Arrays';
 import { useRouter } from 'next/router'
+import { countAtom } from '@/utlis/atoms/count-atom';
 function Checkout() {
+    const count = countAtom.useValue();
     const router = useRouter()
     const handelSubmit = (e:any) => { 
         e.preventDefault()
         router.push("/shipping")
      }
   return (
-    <div className='grid grid-cols-12'>
-        <form onSubmit={handelSubmit} className="px-52 pt-20  col-span-6 flex flex-col gap-4">
+    <div className='lg:grid lg:grid-cols-12 md:flex md:flex-col sm:flex sm:flex-col'>
+        <form onSubmit={handelSubmit} className="lg:pl-52 col-span-6 container mx-auto pt-20 flex flex-col gap-4">
             <h1 className='text-4xl'>Digitic</h1>
             <div>
                 <Link href={"cart"} className='pr-1'>Cart</Link>
@@ -91,7 +93,8 @@ function Checkout() {
             <p>All rights reserved CodePros inspired from Digitic</p>
         </form>
         {/* section two */}
-        <div className="pr-72 pl-32 pt-20 col-span-6 bg-gray-100 flex flex-col gap-5">
+        <div className="bg-gray-100  col-span-6 h-screen">
+        <div className="container mx-auto lg:pr-72 lg:pl-32 pt-20 flex flex-col gap-5">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
                 <div className="relative">
@@ -104,7 +107,7 @@ function Checkout() {
 
                 </div>
                 </div>
-                <p className='font-bold'>$100.00</p>
+                <p className='font-bold'>${count}.00</p>
             </div>
             <hr className='border border-gray-300'/>
             <div className="flex justify-between">
@@ -128,6 +131,7 @@ function Checkout() {
                 <p>USD <span className='text-3xl font-bold'>$118.00</span></p>
             </div>
         </div>
+    </div>
     </div>
   )
 }

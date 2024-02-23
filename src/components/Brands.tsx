@@ -14,7 +14,8 @@ const services = [cat1,cat2,cat3,cat4,cat5,cat6, cat7,cat8]
 
 const FeatureCollection = () => {
   return (
-    <div className='bg-gray-200 text-black px-52 pb-10'>
+    <div className="bg-gray-200">
+    <div className=' text-black container mx-auto pb-10'>
         <Marquee direction='left' speed={50} autoFill>
             <section className='bg-white flex'>
             {
@@ -26,6 +27,7 @@ const FeatureCollection = () => {
             }
             </section>
         </Marquee>
+    </div>
     </div>
   )
 }

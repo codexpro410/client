@@ -36,7 +36,8 @@ const OurPopularProducts = () => {
     const [hover, setHover] = useState<number | null>(null)
 
   return (
-    <main className='bg-gray-200 text-black px-52 pb-10 h-max'>
+    <div className="bg-gray-200">
+    <div className=' text-black container mx-auto pb-10 h-max'>
         <div className="flex justify-between">
         <h2  className='text-3xl font-bold pb-10'>Our Popular Products</h2>
         <div className="flex gap-4">
@@ -99,7 +100,8 @@ const OurPopularProducts = () => {
             ))
         }
         </section>
-        </main>
+        </div>
+        </div>
   )
 }
 

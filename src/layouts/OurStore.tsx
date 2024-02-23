@@ -17,7 +17,8 @@ const OurStore = () => {
     <>
     <Meta title='Our Store'/>
         <BreadCrumb href='store' title='our store'/>
-    <main className='bg-gray-200 text-black px-52 py-10'>
+        <div className="bg-gray-200">
+    <div className=' text-black container mx-auto py-10'>
         <div className='grid grid-cols-[330px_repeat(5,1fr)] grid-rows-subgrid gap-3'>
             <StoreFilter/>
             <div className="flex flex-col justify-between gap-3 col-span-5">
@@ -61,7 +62,8 @@ const OurStore = () => {
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+    </div>
     </>
   )
 }

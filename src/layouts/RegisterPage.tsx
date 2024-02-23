@@ -31,7 +31,7 @@ const RegisterPage = () => {
 
   return (
     <Layout>
-    <form onSubmit={handleSubmit}  className='bg-gray-200 text-black px-52 pb-10 flex flex-col gap-5'>
+    <form onSubmit={handleSubmit}  className='bg-gray-200 text-black container mx-auto pb-10 flex flex-col gap-5'>
           <div className="pt-5 w-1/6 flex justify-between">
           <label className='' htmlFor="name">First Name:</label>
           <input type="text" name="username" id="username" />

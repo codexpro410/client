@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout'
 import Meta from '@/utlis/Meta'
 import React from 'react'
 
-const privacyPolicy = () => {
+const PrivacyPolicy = () => {
   return (
     <Layout>
         <Meta title='privacy'/>
@@ -49,4 +49,4 @@ const privacyPolicy = () => {
   )
 }
 
-export default privacyPolicy
+export default PrivacyPolicy

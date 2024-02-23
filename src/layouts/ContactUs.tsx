@@ -17,7 +17,7 @@ const ContactUs = () => {
      <>
         <Meta title='Contacts'/>
             <BreadCrumb href='contact' title='contact us'/>
-        <main className='bg-gray-200 text-black px-52 py-10'>
+        <main className='bg-gray-200 text-black container mx-auto py-10'>
             <section className='mb-10'>
                 <iframe
                 src='https://maps.app.goo.gl/vxxkEL4kakmm4or87'

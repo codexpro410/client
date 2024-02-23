@@ -26,7 +26,8 @@ const SingleBlog : React.FC<SingleBlogProps> = ({content}) => {
     <Layout>
         <Meta title='Blogs'/>
         <BreadCrumb href={`${content.id}`} title={content.title}/>
-        <section className=' grid grid-cols-[330px,1fr] gap-4 px-52 py-10 bg-gray-300'>
+        <div className="bg-gray-300">
+        <section className=' grid grid-cols-[330px,1fr] gap-4 container mx-auto py-10 '>
           <BlogFilter/>
           <div className="">
             <h1 className='text-3xl'>{content.title}</h1>
@@ -47,6 +48,7 @@ const SingleBlog : React.FC<SingleBlogProps> = ({content}) => {
             </form>
           </div>
         </section>
+        </div>
     </Layout>
   )
 }

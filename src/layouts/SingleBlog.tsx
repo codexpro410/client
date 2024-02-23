@@ -11,7 +11,7 @@ import {useRouter} from 'next/router'
 //     <Layout>
 //         <Meta title='Single Blog'/>
 //         <BreadCrumb href='' title='Single Blog'/>
-//         <main className='bg-gray-200 text-black px-52 pyb-10'>
+//         <main className='bg-gray-200 text-black container mx-auto pyb-10'>
 //         <section className='mb-10'>
 //           Single Blog : {id}
 //         </section>

@@ -19,7 +19,8 @@ const services = [
 ]
 const Section4 = () => {
   return (
-    <main className='bg-gray-200 px-52 py-20 h-max'>
+    <div className="bg-gray-200">
+    <div className='container mx-auto py-20 h-max'>
         <section className='flex gap-2 justify-between'>         
         {
             services.map((item,index) =>(
@@ -35,7 +36,8 @@ const Section4 = () => {
             ))
         }
         </section>
-        </main>
+        </div>
+        </div>
   )
 }
 

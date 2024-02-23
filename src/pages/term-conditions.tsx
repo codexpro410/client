@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout'
 import Meta from '@/utlis/Meta'
 import React from 'react'
 
-const term = () => {
+const Term = () => {
   return (
     <Layout>
         <Meta title='term'/>
@@ -49,4 +49,4 @@ const term = () => {
   )
 }
 
-export default term
+export default Term

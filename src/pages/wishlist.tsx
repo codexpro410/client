@@ -2,7 +2,7 @@ import Layout from '@/layouts/Layout'
 import Wishlist from '@/layouts/Wishlist'
 import React from 'react'
 
-const wishlist = () => {
+const WishList = () => {
   return (
     <Layout>
       <Wishlist/>
@@ -10,4 +10,4 @@ const wishlist = () => {
   )
 }
 
-export default wishlist
+export default WishList

@@ -9,8 +9,8 @@ import B from '../../public/images/payment.png'
 
 function Payment() {
   return (
-    <div className='grid grid-cols-12 h-screen'>
-        <form className="px-52 pt-20  col-span-6 flex flex-col gap-4 ">
+    <div className='lg:grid lg:grid-cols-12 md:flex md:flex-col sm:flex sm:flex-col'>
+        <form className="lg:pl-52 container mx-auto pt-20  col-span-6 flex flex-col gap-4 ">
             <h1 className='text-4xl'>Digitic</h1>
             <div>
                 <Link href={"cart"} className='pr-1'>Cart</Link>
@@ -96,7 +96,7 @@ function Payment() {
             </div>
         </form>
         {/* section two */}
-        <div className="pr-72 pl-32 pt-20 col-span-6 bg-gray-100 flex flex-col gap-5">
+        <div className="lg:pr-72 lg:pl-32 container mx-auto pt-20 col-span-6 bg-gray-100 flex flex-col gap-5">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
                 <div className="relative">

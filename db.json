@@ -1,0 +1,29 @@
+{
+  "products":[
+    {"id":1,"imgs":"/images/laptop.jpg","imgs2":"/images/laptop.jpg", "brand":"havels","desc":"kids headphones bulk 10 pack multi colored for..", "rating":5,"price":100,"discount":0},
+    {"id":2,"imgs":"/images/camera.jpg","imgs2":"/images/camera.jpg", "brand":"Sony","desc":"olympus pen e-PL9 kit with 14-42, EZ Lens, Camera", "rating":2,"price":10,"discount":0},
+    {"id":3,"imgs":"/images/tv.jpg","imgs2":"/images/tv.jpg", "brand":"havels","desc":"Honor T1 7.01 GB RAM 8 GB something ROM...", "rating":3,"price":100,"discount":0},
+    {"id":4,"imgs":"/images/headphone.jpg","imgs2":"/images/headphone.jpg", "brand":"Bajaj","desc":"Beoplay something A1 Portable Bluetooth Speaker with...", "rating":4,"price":500,"discount":750},
+    {"id":5,"imgs":"/images/tv.jpg","imgs2":"/images/tv.jpg", "brand":"Sony","desc":"Milanese Loop Watch Band For 42mm/44mm Apple", "rating":5,"price":10,"discount":0},
+    {"id":6,"imgs":"/images/headphone.jpg","imgs2":"/images/headphone.jpg", "brand":"Bajaj","desc":"Sony EXTRA BASS Portable Splash-Proof Wireless...", "rating":4,"price":220,"discount":0},
+    {"id":7,"imgs":"/images/headphone.jpg","imgs2":"/images/headphone.jpg", "brand":"havels","desc":"kids headphones bulk 10 pack multi colored for..", "rating":5,"price":100,"discount":0},
+    {"id":8,"imgs":"/images/watch2.png","imgs2":"/images/watch2.png", "brand":"Sony","desc":"olympus pen e-PL9 kit with 14-42, EZ Lens, Camera", "rating":2,"price":10,"discount":0}
+
+  ],
+    "hero": [
+      { "id":1, "imgs": "/images/catbanner-01.jpg", "ptext": "new arrival","h1text":"Buy IPad Air","desc1":"From $599.00 or","desc2":"$41.62/mo." },
+      { "id":2, "imgs": "/images/catbanner-02.jpg", "ptext": "best sale","h1text":"Laptops Max","desc1":"From $1699.00 or","desc2":"$49.91/mo. for 12 mo.*" },
+      { "id":3, "imgs": "/images/catbanner-03.jpg", "ptext": "15% off","h1text":"Smartwatch 7","desc1":"Shop the latest band","desc2":"style and colors" },
+      { "id":4, "imgs": "/images/catbanner-04.jpg", "ptext": "free engraving","h1text":"AirPods Max","desc1":"High-fideitly playback &","desc2":"ultra-low distortion" }
+    ],
+    "service": [
+      { "id":1,"h4": "Free Shipping", "p": "From all orders over $100" },
+      { "id":1,"h4": "Daily Surprise Offers", "p": "Save up to 25% off" },
+      { "id":1,"h4": "Support 24/7", "p": "Shop with an export" },
+      { "id":1,"h4": "Affordable Prices", "p": "Get Factory direct price" },
+      { "id":1,"h4": "Secure Payments", "p": "100% Protected Payments" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }

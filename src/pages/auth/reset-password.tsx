@@ -2,7 +2,7 @@ import Layout from '@/layouts/Layout'
 import ResetPassword from '@/layouts/ResetPassword'
 import React from 'react'
 
-const register = () => {
+const Resetpassword = () => {
   return (
     <Layout>
     <ResetPassword/>
@@ -10,4 +10,4 @@ const register = () => {
   )
 }
 
-export default register
+export default Resetpassword

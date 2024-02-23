@@ -41,7 +41,8 @@ const blogs = () => {
     <Layout>
         <Meta title='Blogs'/>
         <BreadCrumb href='blogs' title='blogs'/>
-        <main className='bg-gray-200 text-black px-52 py-10'>
+        <div className="bg-gray-200">
+        <div className=' text-black container mx-auto py-10'>
         <section className='mb-10 grid grid-cols-[330px_1fr] gap-4'>
           <BlogFilter/>
           <div className="grid grid-cols-2 gap-4">
@@ -56,7 +57,8 @@ const blogs = () => {
           </div>
 
         </section>
-        </main>
+        </div>
+        </div>
     </Layout>
   )
 }

@@ -3,7 +3,7 @@ import ContactUs from '@/layouts/ContactUs'
 import Layout from '@/layouts/Layout'
 
 
-const contact = () => {
+const Contact = () => {
  
   return (
     <>
@@ -14,4 +14,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

@@ -19,7 +19,7 @@ type heroProps ={
 const heroImages :React.FC<heroProps> = ({imgs,divStyle,pStyle,p1text,h1Style,h1Text,desc1,desc2,showBtn}) => {
   return (
     <>
-    <Image src={imgs ?? mainb} alt='banner' className='rounded-lg '/>
+    <Image src={imgs ?? mainb} alt='banner' className='rounded-lg ' width={850} height={650}/>
             <div className={`absolute flex flex-col items-start  ${divStyle}`}>
             <p className={`uppercase text-red-500 font-bold ${pStyle}`}>{p1text}</p>
             <h1 className={` ${h1Style}`}>{h1Text}</h1>

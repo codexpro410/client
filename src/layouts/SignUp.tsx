@@ -6,11 +6,13 @@ const SignUp = () => {
   return (
     <>
         <Meta title='Signup'/>
-        <main className='bg-gray-200 text-black px-52 pb-10'>
+        <div className="bg-gray-200">
+        <div className=' text-black container mx-auto pb-10'>
         <BreadCrumb href='auth/signup' title='Sign Up'/>
         <section className='mb-10'>
         </section>
-        </main>
+        </div>
+        </div>
     </>
   )
 }

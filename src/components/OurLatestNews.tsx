@@ -15,9 +15,10 @@ const news = [
     {imgs:cat4, date:date,h3:"Urna Pretium Ellt Mauris Cursus Curabitu",p1:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, ",p2:"alias impedit error ipsa a vitae pariatur voluptatem temporibus consequatur nisi."},
 ]
 
-const LatestNews = () => {
+const OurLatestNews = () => {
   return (
-    <div className='bg-gray-200 text-black px-52 pb-10'>
+    <div className="bg-gray-200">
+    <div className=' text-black container mx-auto pb-10'>
         <h2 className='text-3xl font-bold pb-10'>Our Latest News</h2>
             <section className='flex gap-4 justify-between items-center'>
             {
@@ -41,7 +42,8 @@ const LatestNews = () => {
             }
             </section>
     </div>
+    </div>
   )
 }
 
-export default LatestNews
+export default OurLatestNews

@@ -69,7 +69,7 @@ const Product: React.FC<ProductProps> = ({ services }) => {
     <Layout>
       <Meta title='Store'/>
       <BreadCrumb href={`/store/${services.id}`} title={`${services.desc}`}/>
-      <section className='  px-52 py-10 bg-gray-300'>
+      <section className='  container mx-auto py-10 bg-gray-300'>
         <div className="grid grid-cols-2 gap-4 rounded-lg bg-gray-100 p-10">
           <div className='hover1 flex justify-center items-center pr-4 min-h-screen bg-gray-200 border border-gray-500'>
             {/* TODO: cannot hover */}

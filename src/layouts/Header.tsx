@@ -15,20 +15,20 @@ const navIcons = [
 ]
 const Header = () => {
   return (
-      <main className='pt-3  bg-gray-900 text-white'>
-        <section className="flex justify-between px-52">
+      <main className='pt-3  bg-gray-900 text-white '>
+        <section className="flex justify-between container mx-auto">
           <p className='text-1xl'>Free Shipping over $100 & Free Returns</p>
           <p className='text-1xl hover:text-orange-300'>Hotline <a href="tel:+201094530343">+2 01094530343</a></p>
         </section>
 
-        <div className="px-52">
+        <div className="container mx-auto">
         <hr className='border-gray-500 mt-3 '/>
         </div>
-        <section className="flex py-3 gap-10 px-52 ">
+        <section className="flex py-3 gap-10 container mx-auto ">
           <Link href="/" className='text-2xl w-52'>Dev Corner</Link>
           <div className="bg-white flex justify-between items-center ml-20 rounded-md w-3/6">
-          <input type="text" name="search" id="search" placeholder="Search product here..." className='h-6 w-full outline-none text-black pl-3 '/>
-          <p className=' text-black bg-orange-300  h-full flex items-center w-1/6 rounded-md justify-center cursor-pointer'><BsSearch/></p>
+          <input type="text" name="search" id="search" placeholder="Search product here..." className='h-6 lg:w-full outline-none text-black pl-3 '/>
+          <p className=' text-black bg-orange-300  h-full flex items-center w-20 lg:w-1/6 rounded-md justify-center cursor-pointer'><BsSearch/></p>
           </div>
           <div className="flex gap-10">
             {
@@ -51,8 +51,10 @@ const Header = () => {
         </section>
 
             {/* Third */}
-        <section className='px-52 py-2 bg-gray-800 flex uppercase'>
-          <div className="flex text-black pr-3">
+        <section className=' py-2 bg-gray-800  uppercase'>
+          <div className="container mx-auto flex">
+
+          <div className="flex text-black pr-3 ">
             <Image src={menu} alt='shop' className='mr-3'/>
             <select className='bg-gray-800 text-white outline-none cursor-pointer'>
               <option value="">shop categories</option>
@@ -66,6 +68,7 @@ const Header = () => {
             <Link className='pr-3 hover:text-orange-300' href={'/store'}>our store</Link>
             <Link className='pr-3 hover:text-orange-300' href={'/blogs'}>blogs</Link>
             <Link className='pr-3 hover:text-orange-300' href={'/contact'}>contact</Link>
+          </div>
           </div>
         </section>
       </main>

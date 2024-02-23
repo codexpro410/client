@@ -14,7 +14,8 @@ const services = [
 ]
 const Service = () => {
   return (
-    <div className='bg-gray-200 text-black flex justify-between items-center px-52 py-20'>
+    <div className="bg-gray-200">
+    <div className=' text-black flex justify-between items-center container mx-auto py-20'>
         {
             services.map(item =>(
                 <div className="flex" key={item.h4}>
@@ -26,6 +27,7 @@ const Service = () => {
                 </div>
             ))
         }
+    </div>
     </div>
   )
 }

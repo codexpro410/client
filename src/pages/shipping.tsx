@@ -6,8 +6,9 @@ import Image from 'next/image';
 import { services } from '@/utlis/Arrays';
 function Shipping() {
   return (
-    <div className='grid grid-cols-12 h-screen'>
-        <div className="px-52 pt-20  col-span-6 flex flex-col gap-4 ">
+    <div className='lg:grid lg:grid-cols-12 md:flex md:flex-col sm:flex sm:flex-col'>
+    <div className='lg:pl-52 container mx-auto col-span-6 lg:h-screen'>
+        <div className=" pt-20   flex flex-col gap-4 ">
             <h1 className='text-4xl'>Digitic</h1>
             <div>
                 <Link href={"cart"} className='pr-1'>Cart</Link>
@@ -60,8 +61,9 @@ function Shipping() {
             <hr className='border border-gray-300'/>
             <p>All rights reserved CodePros inspired from Digitic</p>
         </div>
+                        </div>
         {/* section two */}
-        <div className="pr-72 pl-32 pt-20 col-span-6 bg-gray-100 flex flex-col gap-5">
+        <div className="lg:pr-72 lg:pl-32 container mx-auto pt-20 col-span-6 bg-gray-100 flex flex-col gap-5 h-screen">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
                 <div className="relative">

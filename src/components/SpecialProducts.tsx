@@ -44,7 +44,8 @@ const SpecialProducts: React.FC = () => {
 
 
   return (
-    <main className='bg-gray-200 text-black px-52 py-20'>
+    <div className="bg-gray-200">
+    <div className=' text-black container mx-auto py-20'>
         <h2  className='text-3xl font-bold pb-10'>Special Products</h2>
       <div className="grid  grid-cols-6 gap-4  ">
 
@@ -87,7 +88,8 @@ const SpecialProducts: React.FC = () => {
             ))
         }
         </div>
-    </main>
+    </div>
+    </div>
   )
 }
 

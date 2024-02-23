@@ -20,7 +20,8 @@ const Wishlist = () => {
     <>
       <Meta title='Wishlist'/>
           <BreadCrumb href='wishlist' title='Wishlist'/>
-      <main className='bg-gray-200 text-black px-52 py-10'>
+          <div className="bg-gray-200">
+      <div className='bg-gray-200 text-black container mx-auto py-10'>
           <section className='mb-10 flex gap-2'>
           {
                 services.map((item,index)=>(
@@ -49,7 +50,8 @@ const Wishlist = () => {
                 ))
             }
           </section>
-      </main>
+      </div>
+      </div>
     </>
   )
 }

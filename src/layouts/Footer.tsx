@@ -6,24 +6,25 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='px-52 bg-[#144861] text-white'>
+    <footer className=' bg-[#144861] text-white'>
+      <div className="container mx-auto">
       {/* 1st */}
-      <section className='flex justify-between w-4/6 m-auto py-10'>
+      <section className='flex justify-between lg:w-4/6 m-auto py-10'>
         <div className="flex items-center">
           <Image src={newsletter} alt='newsletter'/>
           <p className='ml-2 text-2xl'>Sign Up For Newsletter</p>
         </div>
-        <div className="bg-white flex items-center justify-between rounded-md w-2/6">
+        <div className="bg-white flex items-center justify-between rounded-md  2xl:w-2/6 lg:w-full">
           <input type="text" id='subscribe' name='subscribe' className='outline-none text-black p-1'/>
-          <button className='text-white bg-cyan-900 uppercase rounded-md h-5/6 m-1 p-1'>subscribe</button>
+          <button className='text-white bg-cyan-900 uppercase rounded-md  m-1 p-4'>subscribe</button>
         </div>
       </section>
       <hr className='border-cyan-700' />
 
 
         {/* 2nd */}
-      <section className='flex justify-between pt-4 mb-10'>
-        <div className="">
+      <section className='sm:grid sm:grid-cols-12 lg:flex justify-between pt-4 mb-10'>
+        <div className="sm:col-span-6 ">
           <h2 className='text-2xl font-bold pb-4'>Contact Us</h2>
           <address className=''>
             Demo Store
@@ -51,7 +52,7 @@ const Footer = () => {
               </Link>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="sm:col-span-6 flex flex-col">
           <h2 className='text-2xl font-bold pb-4'>Information</h2>
           {/* TODO: privacy-policy path is not working even if i change the file name */}
           <Link href="/privacy" className='pb-4'>Privacy Policy</Link>
@@ -60,14 +61,14 @@ const Footer = () => {
           <Link href="/term-conditions" className='pb-4'>Terms Of Service</Link>
           <Link href="/blogs" className='pb-4'>Blogs</Link>
         </div>
-        <div className="">
+        <div className="sm:col-span-6 ">
           <h2 className='text-2xl font-bold pb-4'>Account</h2>
           <p className='pb-4'>Search</p>
           <p className='pb-4'>FAQ</p>
           <p className='pb-4'>Contact</p>
           <p className='pb-4'>Size Chart</p>
         </div>
-        <div className="">
+        <div className="sm:col-span-6 ">
           <h2 className='text-2xl font-bold pb-4'>Quick Links</h2>
           <p className='pb-4'>Accessories</p>
           <p className='pb-4'>Laptops</p>
@@ -75,7 +76,7 @@ const Footer = () => {
           <p className='pb-4'>Smart Watches</p>
           <p className='pb-4'>Tablets</p>
         </div>
-        <div className="">
+        <div className="sm:col-span-6 ">
           <h2 className='text-2xl font-bold pb-4'>Our App</h2>
           <p className='pb-4'>
             Download our App and get extra 15% Discount on 
@@ -96,6 +97,7 @@ const Footer = () => {
           
         </div>
       </section>
+      </div>
     </footer>
   )
 }

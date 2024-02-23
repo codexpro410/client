@@ -25,7 +25,8 @@ const services = [
 ]
 const Categories = () => {
   return (
-    <div className='bg-gray-200 text-black px-52 pb-10'>
+    <div className="bg-gray-200">
+    <div className=' text-black container mx-auto pb-10'>
         <section className='bg-white flex-wrap flex justify-between items-center'>
         {
             services.map(item =>(
@@ -39,6 +40,7 @@ const Categories = () => {
             ))
         }
         </section>
+    </div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import ForgotPassword from '@/layouts/ForgotPassword'
 import Layout from '@/layouts/Layout'
 import React from 'react'
 
-const forgotpassword = () => {
+const Forgotpassword = () => {
   return (
     <Layout>
     <ForgotPassword/>
@@ -10,4 +10,4 @@ const forgotpassword = () => {
   )
 }
 
-export default forgotpassword
+export default Forgotpassword
