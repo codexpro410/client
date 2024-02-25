@@ -21,7 +21,7 @@ const FeatureCollection = () => {
     }, [])
     console.log(products)
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto pb-10 h-max'>
         <div className="flex justify-between">
         <h2  className='text-3xl font-bold pb-10'>Featured Collection</h2>

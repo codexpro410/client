@@ -25,7 +25,7 @@ const services = [
 ]
 const Categories = () => {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto pb-10'>
         <section className='bg-white flex-wrap flex justify-between items-center'>
         {

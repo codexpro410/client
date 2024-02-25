@@ -44,7 +44,7 @@ const SpecialProducts: React.FC = () => {
 
 
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto py-20'>
         <h2  className='text-3xl font-bold pb-10'>Special Products</h2>
       <div className="grid  grid-cols-6 gap-4  ">

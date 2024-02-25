@@ -14,11 +14,11 @@ const services = [
 ]
 const Service = () => {
   return (
-    <div className="bg-gray-200">
-    <div className=' text-black flex justify-between items-center container mx-auto py-20'>
+    <div className="bg-gray-200 overflow-hidden">
+    <div className=' text-black grid grid-cols-10 container mx-auto py-20 gap-2'>
         {
             services.map(item =>(
-                <div className="flex" key={item.h4}>
+                <div className="col-span-5 md:col-span-2 flex items-center" key={item.h4}>
                     <Image src={item.imgs} alt='serivce'/>
                     <div className="pl-5">
                         <h4>{item.h4}</h4>

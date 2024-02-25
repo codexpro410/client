@@ -19,7 +19,7 @@ const services = [
 ]
 const Section4 = () => {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 overflow-hidden">
     <div className='container mx-auto py-20 h-max'>
         <section className='flex gap-2 justify-between'>         
         {
