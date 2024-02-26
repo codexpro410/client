@@ -30,7 +30,7 @@ const FeatureCollection = () => {
             <p className='text-2xl cursor-pointer'>&gt;</p>
         </div>
         </div>
-        <section className='grid grid-cols-4 gap-2 justify-between items-center '>
+        <section className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 justify-between items-center '>
         {
             products.map((product,index) =>(
                 <div className={`${styles.product} relative flex flex-col rounded-md bg-white text-wrap pl-3 cursor-pointer`} key={index}

@@ -45,8 +45,8 @@ const OurPopularProducts = () => {
             <p className='text-2xl cursor-pointer'>&gt;</p>
         </div>
         </div>
-        <section className='flex gap-2 justify-between'>
-            <div className="rounded-lg w-1/6 pl-6 gap-7 bg-white flex flex-col justify-center">
+        <section className='grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2 justify-between'>
+            <div className="rounded-lg items-center gap-7 bg-white flex flex-row sm:flex-col  justify-center col-span-2 sm:col-span-1 row-span-2">
                 {filter.map(item => (
                     <div className='flex gap-5 items-center' key={item.name}>
                     <Image src={item.imgs} alt='serivce' style={{width:"50px"}}/>
@@ -54,7 +54,7 @@ const OurPopularProducts = () => {
                     </div>
                 ))}
             </div>
-            <div className="rounded-lg p-10 bg-gray-900 text-white flex flex-col gap-6 ml-8 w-1/6">
+            <div className="rounded-lg p-10 bg-gray-900 text-white flex flex-col gap-6">
                 <p>15% OFF</p>
                 <p className='text-2xl font-bold'>Home Speakers</p>
                 <p>From $399 or $16.62/mo.
@@ -64,7 +64,7 @@ const OurPopularProducts = () => {
             </div>
         {
             services.map((item,index) =>(
-                <div className={`${styles.item} relative flex flex-col rounded-md bg-white text-wrap  w-1/6 pl-3 cursor-pointer`} key={index}
+                <div className={`${styles.item} relative flex flex-col rounded-md bg-white text-wrap pl-3 cursor-pointer`} key={index}
                 onMouseEnter={()=> setHover(index)}
                 onMouseLeave={()=> setHover(null)}
                 > 

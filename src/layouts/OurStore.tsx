@@ -17,13 +17,14 @@ const OurStore = () => {
     <>
     <Meta title='Our Store'/>
         <BreadCrumb href='store' title='our store'/>
-        <div className="bg-gray-200">
+        <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto py-10'>
-        <div className='grid grid-cols-[330px_repeat(5,1fr)] grid-rows-subgrid gap-3'>
+        <div className='grid grid-cols-2 lg:grid-cols-[330px_repeat(5,1fr)] gap-3'>
             <StoreFilter/>
-            <div className="flex flex-col justify-between gap-3 col-span-5">
+            {/* TODO: need to make it in split component */}
+            <div className="flex flex-col justify-between gap-3 lg:col-span-5">
                 <div className="flex flex-col gap-3">
-                    <section className='flex items-center px-3 rounded-lg justify-between h-14 bg-gray-100'>
+                    <section className='hidden lg:flex items-center px-3 rounded-lg justify-between h-14 bg-gray-100'>
                         <div className="flex items-center gap-3">
                         <p className='font-bold'>sort by:</p>
                         <select name="" id="" className='bg-gray-200 rounded-lg h-10'>
@@ -46,10 +47,11 @@ const OurStore = () => {
                         </div>
                     </section>
                     {/* products */}
-                    <section className={`row-span-2 grid grid-cols-${grid} gap-3`}>
+                    <section className={`row-span-2 grid  sm:grid-cols-2 lg:grid-cols-${grid} gap-3`}>
                     <StoreProduct grid={grid}/>
                     </section>
                 </div>
+                {/* pagination */}
                 <div className="">
                     <section className='flex p-3 h-14 justify-between items-center rounded-lg bg-gray-100'>
                         <p>Showing 15 of 21</p>            

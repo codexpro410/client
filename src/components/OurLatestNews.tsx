@@ -20,7 +20,7 @@ const OurLatestNews = () => {
     <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto pb-10'>
         <h2 className='text-3xl font-bold pb-10'>Our Latest News</h2>
-            <section className='flex gap-4 justify-between items-center'>
+            <section className='grid grid-cols-2 lg:grid-cols-4 gap-4 justify-between items-center'>
             {
                 news.map((item,index) =>(
                     <div className="pb-5 flex flex-col gap-3 bg-white rounded-lg cursor-pointer" key={index}>

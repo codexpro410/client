@@ -2,7 +2,7 @@
   "products":[
     {"id":1,"imgs":"/images/laptop.jpg","imgs2":"/images/laptop.jpg", "brand":"havels","desc":"kids headphones bulk 10 pack multi colored for..", "rating":5,"price":100,"discount":0},
     {"id":2,"imgs":"/images/camera.jpg","imgs2":"/images/camera.jpg", "brand":"Sony","desc":"olympus pen e-PL9 kit with 14-42, EZ Lens, Camera", "rating":2,"price":10,"discount":0},
-    {"id":3,"imgs":"/images/tv.jpg","imgs2":"/images/tv.jpg", "brand":"havels","desc":"Honor T1 7.01 GB RAM 8 GB something ROM...", "rating":3,"price":100,"discount":0},
+    {"id":3,"imgs":"/images/tv.jpg","imgs2":"/images/tv.jpg", "brand":"havels","desc":"Honor T1 7.01 GB RAM 8 GB something multi ROM...", "rating":3,"price":100,"discount":0},
     {"id":4,"imgs":"/images/headphone.jpg","imgs2":"/images/headphone.jpg", "brand":"Bajaj","desc":"Beoplay something A1 Portable Bluetooth Speaker with...", "rating":4,"price":500,"discount":750},
     {"id":5,"imgs":"/images/tv.jpg","imgs2":"/images/tv.jpg", "brand":"Sony","desc":"Milanese Loop Watch Band For 42mm/44mm Apple", "rating":5,"price":10,"discount":0},
     {"id":6,"imgs":"/images/headphone.jpg","imgs2":"/images/headphone.jpg", "brand":"Bajaj","desc":"Sony EXTRA BASS Portable Splash-Proof Wireless...", "rating":4,"price":220,"discount":0},

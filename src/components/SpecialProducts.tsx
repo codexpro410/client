@@ -47,12 +47,10 @@ const SpecialProducts: React.FC = () => {
     <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto py-20'>
         <h2  className='text-3xl font-bold pb-10'>Special Products</h2>
-      <div className="grid  grid-cols-6 gap-4  ">
-
-      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  ">      
         {
             productsWithPercent.map((product,index) =>(
-                <div className="col-span-2 bg-gray-100 flex content-center rounded-lg" key={index}>
+                <div className="bg-gray-100 flex content-center rounded-lg" key={index}>
                     <section className='relative'>
                       <div className="hidden absolute right-2 top-16 hover:flex flex-col-reverse gap-4">
                     <Image src={abs1} alt='serivce' />

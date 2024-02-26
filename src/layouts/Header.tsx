@@ -84,7 +84,7 @@ const Header = () => {
         </div>
         {
           toggle &&
-          <div className="h-screen flex flex-col gap-5 text-2xl pl-5" onClick={()=>setToggle(false)}>
+          <div className="h-screen flex flex-col gap-5 text-2xl pl-5 uppercase" onClick={()=>setToggle(false)}>
             <Link className='pr-3 hover:text-orange-300' href={'/'}>Home</Link>
             <Link className='pr-3 hover:text-orange-300' href={'/store'}>our store</Link>
             <Link className='pr-3 hover:text-orange-300' href={'/blogs'}>blogs</Link>

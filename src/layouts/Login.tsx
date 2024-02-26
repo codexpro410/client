@@ -14,7 +14,7 @@ const Login = () => {
         <div className=' text-black container mx-auto py-10'>
         <section className='mb-10'>
           <div className="flex justify-center items-center bg-gray-300 w-3/6 m-auto p-3 rounded-lg">
-            <form action="" className='flex flex-col gap-7 w-4/6'>
+            <form action="" className='flex flex-col gap-7 w-full'>
             <h1 className='text-center text-3xl font-bold p-5'>Login</h1>
               <input className='bg-slate-200 h-10 rounded-lg p-2 text-black' placeholder='Email' type="email" name="email" id="email" required />
               <input className='bg-slate-200 h-10 rounded-lg p-2 text-black' placeholder='Password' type="password" name="password" id="password" required/>

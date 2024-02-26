@@ -37,16 +37,16 @@ const StoreFilter = () => {
                             $ <input type="text" placeholder='To' className='w-2/6 h-10' />
                     </div>
                     <h3 className='text-black text-2xl font-semibold'>color</h3>
-                    <div className="grid grid-cols-8 gap-1 grid-flow-row mr-2">
-                        <div className="p-4 bg-gray-600 rounded-full"></div>
-                        <div className="p-4 bg-blue-300 rounded-full"></div>
-                        <div className="p-4 bg-gray-700 rounded-full"></div>
-                        <div className="p-4 bg-yellow-600 rounded-full"></div>
-                        <div className="p-4 bg-gray-600 rounded-full"></div>
-                        <div className="p-4 bg-red-600 rounded-full"></div>
-                        <div className="p-4 bg-gray-600 rounded-full"></div>
-                        <div className="p-4 bg-amber-600 rounded-full"></div>
-                        <div className="p-4 bg-lime-600 rounded-full"></div>
+                    <div className="grid grid-cols-4 sm:grid-cols-8 gap-2 grid-flow-row mr-2 overflow-hidden">
+                        <div className="p-2 w-7 h-7 bg-gray-600 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-blue-300 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-gray-700 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-yellow-600 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-gray-600 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-red-600 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-gray-600 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-amber-600 rounded-full"></div>
+                        <div className="p-2 w-7 h-7 bg-lime-600 rounded-full"></div>
                     </div>
                     <h3 className='text-black text-2xl font-semibold'>size</h3>
                     <div className="">
@@ -72,15 +72,15 @@ const StoreFilter = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-4 bg-gray-100 text-gray-500 rounded-lg capitalize p-5 my-5">
+                <div className="flex flex-col gap-4 bg-gray-100 text-gray-500 rounded-lg capitalize p-5 my-5 overflow-hidden">
                     <h3 className='text-black text-2xl font-semibold'>product tag</h3>
-                    <div className="flex gap-3">
+                    <div className="grid grid-cols-3 sm:flex gap-3">
                     <p className='bg-gray-200 p-1 text-sm'>Headphones</p>
                     <p className='bg-gray-200 p-1 text-sm'>Laptop</p>
                     <p className='bg-gray-200 p-1 text-sm'>Mobile</p>
                     <p className='bg-gray-200 p-1 text-sm'>Oppo</p>
                     </div>
-                    <div className="flex gap-4">
+                    <div className="grid grid-cols-3 sm:flex gap-4">
                     <p className='bg-gray-200 p-1 text-sm'>Speaker</p>
                     <p className='bg-gray-200 p-1 text-sm'>Tablet</p>
                     <p className='bg-gray-200 p-1 text-sm'>Vivo</p>

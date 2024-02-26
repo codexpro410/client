@@ -22,10 +22,10 @@ const Wishlist = () => {
           <BreadCrumb href='wishlist' title='Wishlist'/>
           <div className="bg-gray-200">
       <div className='bg-gray-200 text-black container mx-auto py-10'>
-          <section className='mb-10 flex gap-2'>
+          <section className='mb-10 grid grid-cols-2 lg:grid-cols-4 gap-2'>
           {
                 services.map((item,index)=>(
-                    <div className="relative flex flex-col w-1/6 gap-5 bg-slate-100 rounded-lg" key={index}>
+                    <div className="relative flex flex-col gap-5 bg-slate-100 rounded-lg" key={index}>
                         <div className="absolute right-3 cursor-pointer">
                             X
                         </div>

@@ -14,7 +14,7 @@ const ForgotPassword = () => {
         <div className=' text-black container mx-auto pb-10 mt-'>
         <section className='py-10'>
           <div className="flex justify-center items-center bg-gray-300 w-3/6 m-auto p-3 rounded-lg">
-            <form action="" className='flex flex-col gap-7 w-4/6'>
+            <form action="" className='flex flex-col gap-7 w-full'>
             <h1 className='text-center text-3xl font-bold p-5'>Reset Your Password</h1>
             <h2 className='text-center text-1xl font-bold p-5'>We will send you an email to reset your password</h2>
               <input className='bg-slate-200 h-10 rounded-lg p-2 text-black' placeholder='Email' type="email" name="email" id="email" required/>

@@ -27,12 +27,12 @@ const Categories = () => {
   return (
     <div className="bg-gray-200 overflow-hidden">
     <div className=' text-black container mx-auto pb-10'>
-        <section className='bg-white flex-wrap flex justify-between items-center'>
+        <section className='bg-white grid grid-cols-12 md:flex-wrap md:flex md:justify-around items-center'>
         {
             services.map(item =>(
-                <div className="flex items-center w-1/5" key={item.h4}>
-                    <div className="pl-5">
-                        <h4>{item.h4}</h4>
+                <div className="col-span-6 sm:col-span-4 flex items-center" key={item.h4}>
+                    <div className="">
+                        <h4 className='text-wrap'>{item.h4}</h4>
                         <p>{item.amount} items</p>
                     </div>
                     <Image src={item.imgs} alt='serivce' />

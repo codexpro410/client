@@ -26,10 +26,10 @@ const Compareproducts = () => {
         <BreadCrumb href='compareproducts' title='Compare Products'/>
         <div className="bg-gray-200">
     <div className=' text-black container mx-auto py-10'>
-        <section className='mb-10 flex gap-2'>
+        <section className='mb-10 gap-2 grid grid-cols-2 lg:grid-cols-4'>
             {
                 services.map((item,index)=>(
-                    <div className="relative flex flex-col w-1/6 gap-5 bg-slate-100 rounded-lg" key={index}>
+                    <div className="relative flex flex-col gap-5 bg-slate-100 rounded-lg" key={index}>
                         <div className="absolute right-3 cursor-pointer">
                             X
                         </div>

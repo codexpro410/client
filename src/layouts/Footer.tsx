@@ -9,18 +9,17 @@ const Footer = () => {
     <footer className=' bg-[#144861] text-white overflow-hidden'>
       <div className="container mx-auto">
       {/* 1st */}
-      <section className='flex justify-between lg:w-4/6 m-auto py-10'>
-        <div className="flex items-center">
+      <section className='grid grid-cols-1 lg:flex justify-between lg:w-4/6 m-auto py-10'>
+        <div className="flex items-center justify-center pb-5 lg:pb-0">
           <Image src={newsletter} alt='newsletter'/>
           <p className='ml-2 text-2xl'>Sign Up For Newsletter</p>
         </div>
-        <div className="bg-white flex items-center justify-between rounded-md  2xl:w-2/6 lg:w-full">
-          <input type="text" id='subscribe' name='subscribe' className='outline-none text-black p-1'/>
+        <div className="bg-white flex items-center  rounded-md  2xl:w-2/6 lg:w-full">
+          <input type="text" id='subscribe' name='subscribe' className='outline-none text-black p-1 flex-1 h-16'/>
           <button className='text-white bg-cyan-900 uppercase rounded-md  m-1 p-4'>subscribe</button>
         </div>
       </section>
       <hr className='border-cyan-700' />
-
 
         {/* 2nd */}
       <section className='sm:grid sm:grid-cols-12 lg:flex justify-between pt-4 mb-10'>

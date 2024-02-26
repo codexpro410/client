@@ -13,7 +13,7 @@ const Login = () => {
         <div className="bg-gray-200">
         <div className=' text-black container mx-auto py-10'>
         <section className='mb-10'>
-          <div className="flex justify-center items-center bg-gray-300 w-3/6 m-auto p-3 rounded-lg">
+          <div className="flex justify-center items-center bg-gray-300 w-full m-auto p-3 rounded-lg">
             <form action="" className='flex flex-col gap-7 w-4/6'>
             <h1 className='text-center text-3xl font-bold p-5'>Create Account</h1>
               <input className='bg-slate-200 h-10 rounded-lg p-2 text-black' placeholder='First name' type="First name" name="First name" id="First name" required />

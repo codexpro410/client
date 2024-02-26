@@ -23,20 +23,20 @@ const StoreProduct : React.FC<StoreProductProps> = ({grid}) => {
         onMouseEnter={()=> setHover(index)}
         onMouseLeave={()=> setHover(null)}
         > 
+            <div  className='relative flex justify-center items-center pr-4 '>
+            <Image src={item.imgs} alt='serivce'className={`${styles.img1}`}/>
+            <Image src={item.imgs2} alt='serivce'className={`${styles.img2}`}/>
+            </div>
         {/* TODO: transition, will delete this and make it out the box + overflow to box then transition */}
             {hover === index &&
-            <div className={`absolute ${grid === 1?"left-40 top-8":"right-2 top-16"} flex flex-col-reverse gap-4`}>
+            <div className={`absolute ${grid === 1?"left-40 top-8":"right-2 top-16"} flex flex-col-reverse gap-4 z-1`}>
             <Image src={Icons.addCart} alt='serivce'/>
             <Image src={Icons.view} alt='serivce'/>
             <Image src={Icons.compare} alt='serivce'/>
             </div>
             }
-            <div className="absolute right-2 top-2">
-            <Image src={Icons.wishlist} alt='serivce' height={25} className=''style={{ filter: 'invert(1)' }} />
-            </div>
-            <div  className='relative flex justify-center items-center pr-4 '>
-            <Image src={item.imgs} alt='serivce'className={`${styles.img1}`}/>
-            <Image src={item.imgs2} alt='serivce'className={`${styles.img2}`}/>
+            <div className="absolute right-2 top-2 z-1">
+            <Image src={Icons.wishlist} alt='serivce' height={25} className='' style={{ filter: 'invert(1)' }} />
             </div>
             <div className={``}>
                 <h4 className='text-red-500 font-bold capitalize'>{item.brand}</h4>
