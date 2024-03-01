@@ -6,9 +6,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/utlis/Arrays';
 import { useRouter } from 'next/router'
-import { countAtom } from '@/utlis/atoms/count-atom';
+import { totalAtom } from '@/utlis/atoms/total-atom';
 function Checkout() {
-    const count = countAtom.useValue();
+
+    const total = totalAtom.useValue();
     const router = useRouter()
     const handelSubmit = (e:any) => { 
         e.preventDefault()
@@ -107,7 +108,7 @@ function Checkout() {
 
                 </div>
                 </div>
-                <p className='font-bold'>${count}.00</p>
+                <p className='font-bold'>${total}.00</p>
             </div>
             <hr className='border border-gray-300'/>
             <div className="flex justify-between">

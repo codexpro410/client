@@ -1,7 +1,6 @@
 import BreadCrumb from '@/components/BreadCrumb'
 import Button from '@/components/Button'
 import Meta from '@/utlis/Meta'
-import Link from 'next/link'
 import React from 'react'
 import { twMerge } from 'tailwind-merge'
 

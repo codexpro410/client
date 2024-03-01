@@ -22,15 +22,15 @@ const FeatureCollection = () => {
     console.log(products)
   return (
     <div className="bg-gray-200 overflow-hidden">
-    <div className=' text-black container mx-auto pb-10 h-max'>
+    <div className=' text-black container mx-auto py-5 h-max'>
         <div className="flex justify-between">
-        <h2  className='text-3xl font-bold pb-10'>Featured Collection</h2>
+        <h2  className='text-3xl font-bold pb-5'>Featured Collection</h2>
         <div className="flex gap-4">
             <p className='text-2xl cursor-pointer'>&lt;</p>
             <p className='text-2xl cursor-pointer'>&gt;</p>
         </div>
         </div>
-        <section className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 justify-between items-center '>
+        <section className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-2 justify-between items-center '>
         {
             products.map((product,index) =>(
                 <div className={`${styles.product} relative flex flex-col rounded-md bg-white text-wrap pl-3 cursor-pointer`} key={index}

@@ -1,6 +1,6 @@
-import { atom } from "@mongez/react-atom";
+import { Atom, atom } from "@mongez/react-atom";
 
-export const totalAtom = atom<number>({
+export const totalAtom : Atom<number> = atom({
     key:"Total",
     default:0,
 })

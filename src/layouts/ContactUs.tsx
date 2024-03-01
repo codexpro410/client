@@ -2,16 +2,9 @@ import React from 'react'
 import BreadCrumb from '@/components/BreadCrumb'
 import Meta from '@/utlis/Meta'
 import Button from '@/components/Button'
+import { info } from '@/utlis/Arrays'
 
-import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
-import { BiPhoneCall, BiInfoCircle } from "react-icons/bi";
 
-const info = [
-    {icon:<AiOutlineHome/>,p:"33 New Cairo, Egypt"},
-    {icon:<AiOutlineMail/>,p:"+0201094530343"},
-    {icon:<BiPhoneCall/>,p:"islamabozeed247@gmail.com"},
-    {icon:<BiInfoCircle/>,p:"Monday - Friday 10 AM ~ 8 PM"},
-]
 const ContactUs = () => {
   return (
      <>
@@ -42,7 +35,7 @@ const ContactUs = () => {
                 <h3 className='text-3xl font-bold pb-4'>Get in Touch With Us</h3>
                 {
                     info.map(infos =>(
-                        <div className='flex gap-5' key={infos.p}>
+                        <div className='flex gap-5' key={infos.id}>
                             <div className="text-2xl">{infos.icon}</div>
                             <p>{infos.p}</p>
                         </div>

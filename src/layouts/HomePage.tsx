@@ -8,7 +8,7 @@ import React from 'react'
 import OurLatestNews from '@/components/OurLatestNews'
 import SpecialProducts from '@/components/SpecialProducts'
 import OurPopularProducts from '@/components/OurPopularProducts'
-import Section4 from '@/components/Section4'
+import Ads from '@/components/Ads'
 
 
 const HomePage = () => {
@@ -18,7 +18,7 @@ const HomePage = () => {
         <Service/>
         <Categories/>
         <FeatureCollection/>
-        <Section4/>
+        <Ads/>
         <SpecialProducts/>
         <OurPopularProducts/>
         <Brands/>

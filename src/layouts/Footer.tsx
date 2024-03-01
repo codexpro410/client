@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="bg-white flex items-center  rounded-md  2xl:w-2/6 lg:w-full">
           <input type="text" id='subscribe' name='subscribe' className='outline-none text-black p-1 flex-1 h-16'/>
-          <button className='text-white bg-cyan-900 uppercase rounded-md  m-1 p-4'>subscribe</button>
+          <button className='text-white bg-cyan-800 uppercase rounded-md m-1 p-4 hover:bg-cyan-950'>subscribe</button>
         </div>
       </section>
       <hr className='border-cyan-700' />
@@ -33,47 +33,51 @@ const Footer = () => {
           Egypt
           <br />
           </address>
-          <Link href="tel:+02 01094530343" className='pt-4'>+02 01094530343</Link>
+          <Link href="tel:+02 01094530343" className='pt-4 hover:underline hover:font-semibold'>+02 01094530343</Link>
           <br />
-          <Link href="mailto:islamabozeed247@gmail.com" className='pt-4'>islamabozeed247@gmail.com</Link>        
+          <Link href="mailto:islamabozeed247@gmail.com" className='pt-4 hover:underline hover:font-semibold'>islamabozeed247@gmail.com</Link>        
           <div className="social flex gap-10 mt-4">
-              <Link href='/' className='text-2xl'>
-                <BsLinkedin/>
-              </Link>
-             <Link href='/' className='text-2xl'>
-                <BsGithub/>
-              </Link>
-             <Link href='/' className='text-2xl'>
-                <BsYoutube/>
-              </Link>
-             <Link href='/' className='text-2xl'>
-                <BsInstagram/>
-              </Link>
+                <BsLinkedin href="/" className='text-2xl hover:text-black' cursor="pointer"
+                onMouseOver={e=>(e!.target as HTMLElement).style.color="orange"}
+                onMouseOut={e=>(e!.target as HTMLElement).style.color="white"}/>
+
+                <BsGithub href="/" className='text-2xl hover:text-black' cursor="pointer"
+                onMouseOver={e=>(e!.target as HTMLElement).style.color="orange"}
+                onMouseOut={e=>(e!.target as HTMLElement).style.color="white"}/>
+
+                <BsYoutube href="/" className='text-2xl hover:text-black' cursor="pointer"
+                onMouseOver={e=>(e!.target as HTMLElement).style.color="orange"}
+                onMouseOut={e=>(e!.target as HTMLElement).style.color="white"}/>
+
+                <BsInstagram href="/" className='text-2xl hover:text-black' cursor="pointer"
+                onMouseOver={e=>(e!.target as HTMLElement).style.color="orange"}
+                onMouseOut={e=>(e!.target as HTMLElement).style.color="white"}/>
+
           </div>
         </div>
         <div className="sm:col-span-6 flex flex-col">
           <h2 className='text-2xl font-bold pb-4'>Information</h2>
           {/* TODO: privacy-policy path is not working even if i change the file name */}
-          <Link href="/privacy" className='pb-4'>Privacy Policy</Link>
-          <Link href="/refund-policy" className='pb-4'>Refund Policy</Link>
-          <Link href="/shipping-policy" className='pb-4'>Shipping Policy</Link>
-          <Link href="/term-conditions" className='pb-4'>Terms Of Service</Link>
-          <Link href="/blogs" className='pb-4'>Blogs</Link>
+          <Link href="/privacy" className='pb-4 hover:underline hover:font-semibold'>Privacy Policy</Link>
+          <Link href="/refund-policy" className='pb-4 hover:underline hover:font-semibold'>Refund Policy</Link>
+          <Link href="/shipping-policy" className='pb-4 hover:underline hover:font-semibold'>Shipping Policy</Link>
+          <Link href="/term-conditions" className='pb-4 hover:underline hover:font-semibold'>Terms Of Service</Link>
+          <Link href="/blogs" className='pb-4 hover:underline hover:font-semibold'>Blogs</Link>
         </div>
-        <div className="sm:col-span-6 ">
+        <div className="sm:col-span-6  flex flex-col ">
           <h2 className='text-2xl font-bold pb-4'>Account</h2>
-          <p className='pb-4'>Search</p>
-          <p className='pb-4'>FAQ</p>
-          <p className='pb-4'>Contact</p>
-          <p className='pb-4'>Size Chart</p>
+          <Link href="/" className='pb-4  hover:underline hover:font-semibold'>Search</Link>
+          <Link href="/" className='pb-4  hover:underline hover:font-semibold'>FAQ</Link>
+          <Link href="/" className='pb-4  hover:underline hover:font-semibold'>Contact</Link>
+          <Link href="/" className='pb-4  hover:underline hover:font-semibold'>Size Chart</Link>
         </div>
-        <div className="sm:col-span-6 ">
+        <div className="sm:col-span-6 flex flex-col ">
           <h2 className='text-2xl font-bold pb-4'>Quick Links</h2>
-          <p className='pb-4'>Accessories</p>
-          <p className='pb-4'>Laptops</p>
-          <p className='pb-4'>Headphones</p>
-          <p className='pb-4'>Smart Watches</p>
-          <p className='pb-4'>Tablets</p>
+          <Link href="/" className='pb-4 hover:underline hover:font-semibold'>Accessories</Link>
+          <Link href="/" className='pb-4 hover:underline hover:font-semibold'>Laptops</Link>
+          <Link href="/" className='pb-4 hover:underline hover:font-semibold'>Headphones</Link>
+          <Link href="/" className='pb-4 hover:underline hover:font-semibold'>Smart Watches</Link>
+          <Link href="/" className='pb-4 hover:underline hover:font-semibold'>Tablets</Link>
         </div>
         <div className="sm:col-span-6 ">
           <h2 className='text-2xl font-bold pb-4'>Our App</h2>
@@ -90,7 +94,7 @@ const Footer = () => {
 
       <hr className='border-cyan-700' />
             {/* 3rd */}
-      <section className='text-center pt-4'>
+      <section className='text-center py-4'>
         <p>&copy; {new Date().getFullYear()}: Powerd by Developer&#39;s Corner, Presented by Islam M. Abozeed</p>
         <div className="pay">
           

@@ -3,24 +3,16 @@ import Layout from '@/layouts/Layout';
 import Meta from '@/utlis/Meta';
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import { Icons, payment, services } from '@/utlis/Arrays'
+import { Icons, options, payment, services } from '@/utlis/Arrays'
 import ReactStars from 'react-rating-stars-component'
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
-// import styles from '../../components/FeatureCollection.module.css';
 import Button from '@/components/Button';
 import { CiHeart } from "react-icons/ci";
-import { IoIosArrowDown } from "react-icons/io";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { TiAttachment } from "react-icons/ti";
-import { LiaShippingFastSolid } from "react-icons/lia";
-import { TfiRulerAlt } from "react-icons/tfi";
-import { CiBoxes } from "react-icons/ci";
 import { twMerge } from 'tailwind-merge';
 import StoreProduct from '@/components/StoreProduct';
-// import InnerImageZoom from 'react-inner-image-zoom';
-// import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+
 import ReactImageZoom from 'react-image-zoom';
-import Table from '@/components/Table';
+
 
 type ProductProps = {
   services: {
@@ -42,13 +34,7 @@ type ProductProps = {
   }
 };
 
-const options = [
-  {id:1,arrowLeft:<MdKeyboardArrowLeft size={25}/>,icon:<LiaShippingFastSolid size={25} />,name:"Shipping & Returns",arrow:<IoIosArrowDown />,desc:"Free shipping and returns available on all orders!",desc2:"We ship all US domestic orders within 5~10 business days!"},
-  {id:2,arrowLeft:<MdKeyboardArrowLeft size={25}/>,icon:<CiBoxes size={25} />,name:"Materials",arrow:<IoIosArrowDown />,desc:"Running Shoes cushion your strude with soft form to keep you running in comfort, Lightweight knit material",desc2:"wraps your foot in breathable support, while a minimalist design fits in just about anywhere your day takes you."},
-  {id:3,arrowLeft:<MdKeyboardArrowLeft size={25}/>,icon:<TfiRulerAlt size={25} />,name:"Dimensions",arrow:<IoIosArrowDown />,desc:<Table/>,desc2:""},
-  {id:4,arrowLeft:<MdKeyboardArrowLeft size={25}/>,icon:<CiHeart size={25}/>,name:"Care instructions",arrow:<IoIosArrowDown />,desc:"use a soft damp cloth and a drop of mild soap to remove any haze, Air dry",desc2:""},
-  {id:5,arrowLeft:"",icon:<TiAttachment size={25}/>,name:"Share",arrow:"",desc:"",desc2:""},
-]
+
 
 const Product: React.FC<ProductProps> = ({ services }) => {
   const [clicked, setClicked] = useState("")
@@ -132,7 +118,7 @@ const Product: React.FC<ProductProps> = ({ services }) => {
               </div>
             </div>
             {
-              options.map((option,index) =>(
+              options.map((option) =>(
               <div className="flex flex-col " key={option.id}>
                 <div className="flex justify-between items-center pl-3 w-full"  onClick={() => handelShow(option.id)}>
                   <div className="flex ">
