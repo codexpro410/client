@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className=' bg-[#144861] text-white overflow-hidden'>
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-6xl">
       {/* 1st */}
       <section className='grid grid-cols-1 lg:flex justify-between lg:w-4/6 m-auto py-10'>
         <div className="flex items-center justify-center pb-5 lg:pb-0">

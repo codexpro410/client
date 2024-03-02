@@ -27,7 +27,7 @@ const Hero = () => {
   // }, [])
   
   return (
-    <main className='bg-gray-100'>
+    <main className=''>
       <div className='grid  grid-cols-12 gap-4 container mx-auto pt-10 pb-5 text-black'>
         <div className="col-span-12 md:col-span-12 lg:col-span-6 w-full relative font-bold p-1">
             <HeroImages imgs={mainb} divStyle={twMerge('top-10 left-10 gap-5')} h1Style='text-4xl' p1text='supercharged for pros' h1Text='iPad S13+Pro.' desc1='From $999.00 or $41.62/mo.' desc2='for 24 mo. Footnote*'  showBtn={true}/>

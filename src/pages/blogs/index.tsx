@@ -13,7 +13,7 @@ const Blogs = () => {
         <Meta title='Blogs'/>
         <BreadCrumb href='blogs' title='blogs'/>
         <div className="bg-gray-200">
-        <div className=' text-black container mx-auto py-10'>
+        <div className=' text-black container mx-auto max-w-6xl py-10'>
         <section className='mb-10 grid  lg:grid-cols-[330px_1fr] gap-4'>
           <BlogFilter/>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

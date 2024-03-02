@@ -3,11 +3,11 @@ import React from 'react'
 import BreadCrumb from '@/components/BreadCrumb'
 import Meta from '@/utlis/Meta'
 import BlogCard from '@/components/BlogCard';
-import { array } from '@/pages/blogs';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import BlogFilter from '../../layouts/BlogFilter';
 import Button from '@/components/Button';
 import { StaticImageData } from 'next/image';
+import { blogsArray } from '@/utlis/Arrays';
 
 
 type SingleBlogProps = {
@@ -27,7 +27,7 @@ const SingleBlog : React.FC<SingleBlogProps> = ({content}) => {
         <Meta title='Blogs'/>
         <BreadCrumb href={`${content.id}`} title={content.title}/>
         <div className="bg-gray-300">
-        <section className=' grid grid-cols-[330px,1fr] gap-4 container mx-auto py-10 '>
+        <section className=' grid grid-cols-[330px,1fr] gap-4 container mx-auto max-w-6xl py-10 '>
           <BlogFilter/>
           <div className="">
             <h1 className='text-3xl'>{content.title}</h1>
@@ -54,7 +54,7 @@ const SingleBlog : React.FC<SingleBlogProps> = ({content}) => {
 }
 
 export async function getStaticPaths() {
-  const paths = array.map((_, index) => ({ params: { blog: `${index + 1}` } }));
+  const paths = blogsArray.map((_, index) => ({ params: { blog: `${index + 1}` } }));
   return {
     paths,
     fallback: false,
@@ -63,7 +63,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps ({ params}:Params) {
   const blogIndex = Number(params.blog) - 1;
-  const content = array[blogIndex];
+  const content = blogsArray[blogIndex];
   return {
     props: {
       content,

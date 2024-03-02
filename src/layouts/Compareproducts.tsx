@@ -15,7 +15,7 @@ const Compareproducts = () => {
     </Head>
         <BreadCrumb href='compareproducts' title='Compare Products'/>
         <div className="bg-gray-200">
-    <div className=' text-black container mx-auto py-10'>
+    <div className=' text-black container mx-auto max-w-6xl py-10'>
         <section className='mb-10 gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
             {
                 compareProductsArray.map((item)=>(

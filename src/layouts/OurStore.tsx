@@ -18,7 +18,7 @@ const OurStore = () => {
     <Meta title='Our Store'/>
         <BreadCrumb href='store' title='our store'/>
         <div className="bg-gray-200 overflow-hidden">
-    <div className=' text-black container mx-auto py-10'>
+    <div className=' text-black container mx-auto max-w-6xl py-10'>
         <div className='grid grid-cols-2 lg:grid-cols-[330px_repeat(5,1fr)] gap-3'>
             <StoreFilter/>
             {/* TODO: need to make it in split component */}

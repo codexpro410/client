@@ -14,15 +14,15 @@ const Header = () => {
   const [toggleMd, setToggleMd] = useState(false)
   return (
       <main className='pt-3  bg-gray-900 text-white overflow-hidden'>
-        <section className="flex justify-between container mx-auto">
+        <section className="flex justify-between container mx-auto max-w-6xl ">
           <p className='text-1xl text-center flex-auto sm:text-left'>Free Shipping over $100 & Free Returns</p>
           <p className='text-1xl hover:text-orange-300 hidden sm:block'>Hotline <a href="tel:+201094530343">+2 01094530343</a></p>
         </section>
 
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-6xl">
         <hr className='border-gray-500 mt-3'/>
         </div>
-        <section className="hidden sm:grid grid-cols-12 py-3 gap-10 container mx-auto">
+        <section className="hidden sm:grid grid-cols-12 py-3 gap-10 container mx-auto max-w-6xl">
           <Link href="/" className='text-2xl col-span-2 sm:text-sm sm:col-span-1 md:text-2xl md:col-span-2'>Dev Corner</Link>
           <div className="bg-white flex justify-between items-center rounded-md col-span-8 md:col-span-4 lg:col-span-5">
           <input type="text" name="search" id="search" placeholder="Search product here..." className='pl-2 overflow-hidden outline-none text-black '/>
@@ -49,7 +49,7 @@ const Header = () => {
         </section>
             {/* Third */}
         <section className='hidden sm:block py-2 bg-gray-800  uppercase'>
-          <div className="container mx-auto flex items-center">
+          <div className="container mx-auto max-w-6xl flex items-center">
 
           <div className="flex item text-black pr-3 ">
             <Image src={menu} alt='shop' className='mr-3'/>

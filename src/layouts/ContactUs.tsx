@@ -10,8 +10,9 @@ const ContactUs = () => {
      <>
         <Meta title='Contacts'/>
             <BreadCrumb href='contact' title='contact us'/>
-        <main className='bg-gray-200 overflow-hidden text-black container mx-auto py-10'>
-            <section className='mb-10 hidden sm:block'>
+        <main className='bg-gray-200 overflow-hidden text-black '>
+            <div className="max-w-6xl container mx-auto  py-10">
+            <section className='mb-10 hidden sm:block '>
                 <iframe
                 src='https://maps.app.goo.gl/vxxkEL4kakmm4or87'
                 height={450} style={{width:"100%"}}
@@ -45,6 +46,7 @@ const ContactUs = () => {
 
                 </div>
             </section>
+            </div>
         </main>
     </>
   )

@@ -13,7 +13,8 @@ import Ads from '@/components/Ads'
 
 const HomePage = () => {
   return (
-      <main className=''>
+      <main className=' bg-gray-200'>
+        <div className="max-w-6xl mx-auto">
         <Hero/>
         <Service/>
         <Categories/>
@@ -23,6 +24,7 @@ const HomePage = () => {
         <OurPopularProducts/>
         <Brands/>
         <OurLatestNews/>
+        </div>
       </main>
   )
 }

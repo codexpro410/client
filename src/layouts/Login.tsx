@@ -11,7 +11,7 @@ const Login = () => {
         <Meta title='Login'/>
         <BreadCrumb href='auth/login' title='Account'/>
         <div className="bg-gray-200">
-        <div className=' text-black container mx-auto py-10'>
+        <div className=' text-black container mx-auto max-w-6xl py-10'>
         <section className='mb-10'>
           <div className="flex justify-center items-center bg-gray-300 w-3/6 m-auto p-3 rounded-lg">
             <form action="" className='flex flex-col gap-7 w-full'>

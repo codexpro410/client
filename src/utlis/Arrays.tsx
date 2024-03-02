@@ -12,6 +12,53 @@ import hover4 from '../../public/images/headphone2.png';
 import hover5 from '../../public/images/laptop2.jpg';
 import hover6 from '../../public/images/tv2.png';
 
+import cats1 from '../../public/images/laptop.jpg';
+import cats2 from '../../public/images/camera.jpg';
+import cats3 from '../../public/images/tv.jpg';
+import cats4 from '../../public/images/headphone.jpg';
+import cats5 from '../../public/images/laptop.jpg';
+import cats6 from '../../public/images/tv.jpg';
+import cats7 from '../../public/images/headphone.jpg';
+import cats8 from '../../public/images/acc.jpg';
+import cats9 from '../../public/images/speaker.jpg';
+import cats10 from '../../public/images/camera.jpg';
+
+import ads1 from '../../public/images/watch2.png';
+import ads2 from '../../public/images/camera.jpg';
+import ads5 from '../../public/images/laptop.jpg';
+
+import cat11 from '../../public/images/watch2.png';
+import cat12 from '../../public/images/camera.jpg';
+import cat13 from '../../public/images/tv.jpg';
+import cat14 from '../../public/images/headphone.jpg';
+import cat15 from '../../public/images/laptop.jpg';
+import cat16 from '../../public/images/tv.jpg';
+
+import hovers1 from '../../public/images/watch1.png';
+import hovers2 from '../../public/images/camera.jpg';
+import hovers3 from '../../public/images/tv.jpg';
+import hovers4 from '../../public/images/headphone.jpg';
+import hovers5 from '../../public/images/laptop.jpg';
+import hovers6 from '../../public/images/tv.jpg';
+
+import cat01 from'../../public/images/watch2.png';
+import cat02 from '../../public/images/camera.jpg';
+import cat03 from '../../public/images/tv.jpg';
+import cat04 from '../../public/images/headphone.jpg';
+
+import cattt1 from'../../public/images/watch2.png';
+import cattt2 from '../../public/images/camera.jpg';
+import cattt3 from '../../public/images/tv.jpg';
+import cattt4 from '../../public/images/headphone.jpg';
+
+
+
+
+
+
+
+
+
 import addCart from '../../public/images/add-cart.svg';
 import view from '../../public/images/view.svg';
 import compare from '../../public/images/prodcompare.svg';
@@ -82,16 +129,7 @@ export const servicesSection = [
     {id:5,imgs:srv5, h4:'Secure Payments',p:'100% Protected Payments'},
 ]
 
-import cats1 from '../../public/images/laptop.jpg';
-import cats2 from '../../public/images/camera.jpg';
-import cats3 from '../../public/images/tv.jpg';
-import cats4 from '../../public/images/headphone.jpg';
-import cats5 from '../../public/images/laptop.jpg';
-import cats6 from '../../public/images/tv.jpg';
-import cats7 from '../../public/images/headphone.jpg';
-import cats8 from '../../public/images/acc.jpg';
-import cats9 from '../../public/images/speaker.jpg';
-import cats10 from '../../public/images/camera.jpg';
+
 export const categories = [
     {id:1,imgs:cats1, h4:'Computers & Laptop',amount:8},
     {id:2,imgs:cats2, h4:'Cameras',amount:10},
@@ -108,9 +146,7 @@ export const categories = [
 
 
 
-import ads1 from '../../public/images/watch2.png';
-import ads2 from '../../public/images/camera.jpg';
-import ads5 from '../../public/images/laptop.jpg';
+
 
 export const ads = [
     {id:1,imgs:ads1,p1:'big screen',h4:'smart watch series 7',p2:'from $399 or $16.62/mo. for 24 mo.*'},
@@ -121,19 +157,7 @@ export const ads = [
 
 
 
-import cat11 from '../../public/images/watch2.png';
-import cat12 from '../../public/images/camera.jpg';
-import cat13 from '../../public/images/tv.jpg';
-import cat14 from '../../public/images/headphone.jpg';
-import cat15 from '../../public/images/laptop.jpg';
-import cat16 from '../../public/images/tv.jpg';
 
-import hovers1 from '../../public/images/watch1.png';
-import hovers2 from '../../public/images/camera.jpg';
-import hovers3 from '../../public/images/tv.jpg';
-import hovers4 from '../../public/images/headphone.jpg';
-import hovers5 from '../../public/images/laptop.jpg';
-import hovers6 from '../../public/images/tv.jpg';
 export const products = [
   {id:1,imgs:cat11,img:cat11,imgs2:hovers1, brand:'havels',desc:"kids headphones bulk 10 pack multi colored for..",days:743,h:"06",m:"41",sec:"43",stock:200,available:100, rating:5,price:60,discount:75},
   {id:2,imgs:cat12,img:cat11,imgs2:hovers2, brand:'Sony',desc:"olympus pen e-PL9 kit with 14-42, EZ Lens, Camera",days:743,h:"06",m:"41",sec:"43",stock:200,available:125, rating:2,price:16,discount:30},
@@ -214,10 +238,7 @@ export const navIcons = [
 ]
 
 // ***************************
-import cat01 from'../../public/images/watch2.png';
-import cat02 from '../../public/images/camera.jpg';
-import cat03 from '../../public/images/tv.jpg';
-import cat04 from '../../public/images/headphone.jpg';
+
 
 const colors = {
   black:"bg-black",gray:"bg-gray-500",red:"bg-red-300",slate:"bg-slate-500",amber:"bg-amber-500",sky:"bg-sky-500"
@@ -242,10 +263,7 @@ export const info = [
 ]
 
 //*************** */
-import cattt1 from'../../public/images/watch2.png';
-import cattt2 from '../../public/images/camera.jpg';
-import cattt3 from '../../public/images/tv.jpg';
-import cattt4 from '../../public/images/headphone.jpg';
+
 
 export const wishListArray = [
   {id:1,imgs:cattt1,desc:"kids headphones bulk 10 pack multi colored for..", price:100,discount:0},
@@ -256,9 +274,9 @@ export const wishListArray = [
 //*************** */
 
 
-import cat19 from '../../../public/images/blog-1.jpg';
-import cat29 from '../../../public/images/blog-2.jpg';
-import cat39 from '../../../public/images/blog-3.jpg';
+import cat19 from '../../public/images/blog-1.jpg';
+import cat29 from '../../public/images/blog-2.jpg';
+import cat39 from '../../public/images/blog-3.jpg';
 export const blogsArray = [
   {
     id:1,
